@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiTEK AS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <ul>
+        <div>
+            <li><img id="logo" src="logo.png" width="100px"></li>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="first.html">Gaming PC</a></li>
+        <li><a href="second.html">Simple Laptop</a></li>
+        <li><a href="third.html">Sound System</a></li>
+        <li><a href="fourth.html">Components</a></li>
+    </ul>
+
+    <div class="main-content">
+        <div class="product-display">
+            <div class="product-image-container">
+                <img id="main-image" src="simplelaptop.png" alt="Gaming PC" class="product-image">
+            </div>
+            <div class="product-thumbnails">
+                <img src="simplelaptop.png" alt="Simple Laptop 1" class="thumbnail" onclick="changeImage('simplelaptop.png')">
+                <img src="simplelaptop1.png" alt="Simple Laptop 2" class="thumbnail" onclick="changeImage('simplelaptop1.png')">
+                <img src="simplelaptop2.png" alt="Simple Laptop 3" class="thumbnail" onclick="changeImage('simplelaptop2.png')">
+                <img src="simplelaptop3.png" alt="Simple Laptop 4" class="thumbnail" onclick="changeImage('simplelaptop3.png')">
+                <img src="simplelaptop4.png" alt="Simple Laptop 5" class="thumbnail" onclick="changeImage('simplelaptop4.png')">
+            </div>
+            <div class="product-description">
+                <h2>Lenovo IdeaPad 3 Chromebook 14M836 64 GB</h2>
+                <p>A budget and productive laptop that will always be convenient to carry with you is a great choice for travel lovers. Ideal for surfing the Internet and office tasks, a laptop with a 16-hour battery life is what we can safely recommend to you.</p>
+                <p>Specifications:</p>
+                <p>MediaTech MT8183</p>
+                <p>Up to 16 hours of battery life</p>
+                <p>4GB RAM, 64GB eMMC storage</p>
+                <p>14" Full HD display, TN panel</p>
+                <p>Chrome OS</p>
+                <p>720p webcam with privacy cover</p>
+                <p>Price: $249.99</p>
+                <button class="buy-button" onclick="window.location.href='https://youtu.be/K6jNEu-JENc?si=8eGpXxXiENdH3tlB'">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>HiTEK AS</p>
+            <p>E-Mail : hitek@mail.com</p>
+            <p>© Copyright All rights reserved</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+    </script>
+</body>
+</html>
