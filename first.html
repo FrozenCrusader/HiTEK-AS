@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiTEK AS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <ul>
+        <div>
+            <li><img id="logo" src="logo.png" width="100px"></li>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="first.html">Gaming PC</a></li>
+        <li><a href="second.html">Simple Laptop</a></li>
+        <li><a href="third.html">Sound System</a></li>
+        <li><a href="fourth.html">Components</a></li>
+    </ul>
+
+    <div class="main-content">
+        <div class="product-display">
+            <div class="product-image-container">
+                <img id="main-image" src="gamingpc.png" alt="Gaming PC" class="product-image">
+            </div>
+            <div class="product-thumbnails">
+                <img src="gamingpc.png" alt="Gaming PC 1" class="thumbnail" onclick="changeImage('gamingpc.png')">
+                <img src="gamingpc1.png" alt="Gaming PC 2" class="thumbnail" onclick="changeImage('gamingpc1.png')">
+                <img src="gamingpc3.png" alt="Gaming PC 3" class="thumbnail" onclick="changeImage('gamingpc3.png')">
+                <img src="gamingpc4.png" alt="Gaming PC 4" class="thumbnail" onclick="changeImage('gamingpc4.png')">
+                <img src="gamingpc5.png" alt="Gaming PC 5" class="thumbnail" onclick="changeImage('gamingpc5.png')">
+            </div>
+            <div class="product-description">
+                <h2>Cepter E-Sport R46 PC</h2>
+                <p>A high-performance desktop PC that we can recommend to a computer gamer. If you like to play modern AAA projects on high graphics settings, then this computer will suit you perfectly. The latest components, thanks to the work of our specialists, were assembled in this computer assembly, which will suit any gamer with a not very large budget.</p>
+                <p>Specifications:</p>
+                <p>NVIDIA GeForce RTX 4060 8 GB</p>
+                <p>AMD Ryzen™ 5 5500</p>
+                <p>32 GB RAM, 1 TB M.2 NVMe SSD</p>
+                <p>Windows 11 Home version</p>
+                <p>Arctic Alpine 23 processor cooler</p>
+                <p>ASUS PRIME A520M-K motherboard</p>
+                <p>Price: $1,249.99</p>
+                <button class="buy-button" onclick="window.location.href='https://youtu.be/K6jNEu-JENc?si=8eGpXxXiENdH3tlB'">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>HiTEK AS</p>
+            <p>E-Mail : hitek@mail.com</p>
+            <p>© Copyright All rights reserved</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+    </script>
+</body>
+</html>

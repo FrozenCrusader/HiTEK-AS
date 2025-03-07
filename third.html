@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiTEK AS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <ul>
+        <div>
+            <li><img id="logo" src="logo.png" width="100px"></li>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="first.html">Gaming PC</a></li>
+        <li><a href="second.html">Simple Laptop</a></li>
+        <li><a href="third.html">Sound System</a></li>
+        <li><a href="fourth.html">Components</a></li>
+    </ul>
+
+    <div class="main-content">
+        <div class="product-display">
+            <div class="product-image-container">
+                <img id="main-image" src="sound.jpg" alt="Sound System" class="product-image">
+            </div>
+            <div class="product-thumbnails">
+                <img src="sound.jpg" alt="Sound System 1" class="thumbnail" onclick="changeImage('sound.jpg')">
+                <img src="sound1.jpg" alt="Sound System 2" class="thumbnail" onclick="changeImage('sound1.jpg')">
+                <img src="sound2.jpg" alt="Sound System 3" class="thumbnail" onclick="changeImage('sound2.jpg')">
+                <img src="sound3.jpg" alt="Sound System 4" class="thumbnail" onclick="changeImage('sound3.jpg')">
+                <img src="sound4.jpg" alt="Sound System 5" class="thumbnail" onclick="changeImage('sound4.jpg')">
+            </div>
+            <div class="product-description">
+                <h2>Rode Rodecaster Pro II Quad Bundle</h2>
+                <p>The RØDECaster Pro II is the ultimate audio production solution for content creators, including streamers, podcasters and musicians. Combining revolutionary features with superior sound quality, endless customisability and unmatched ease of use, the RØDECaster Pro II is all you will ever need to record incredible audio for your content. This kit contains everything you need for professional audio recording.</p>
+                <p>Specifications:</p>
+                <p>Rode RodeCaster Pro II. 
+                    The world's most powerful all-in-one audio production solution
+                    Perfect for streamers, podcasters, broadcasters, content creators and musicians</p>
+                <p>Rode Podmic Dynamic Podcasting Microphone. 
+                    Perfect for home studio use with a broadcast-quality dynamic capsule</p>
+                <p>HP-210 Stereo Headphones by Gear4Music</p>
+                <p>Price: $1349.99</p>
+                <button class="buy-button" onclick="window.location.href='https://youtu.be/K6jNEu-JENc?si=8eGpXxXiENdH3tlB'">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>HiTEK AS</p>
+            <p>E-Mail : hitek@mail.com</p>
+            <p>© Copyright All rights reserved</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+    </script>
+</body>
+</html>
